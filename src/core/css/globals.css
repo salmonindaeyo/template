@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  font-family: "TF Lanna", sans-serif;
+}
+
+
+.card-container-four {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 7rem;
+  row-gap: 40px;
+  width: 100%;
+  max-width: 800px;
+}
+
+@media (max-width: 768px) {
+  .card-container-four {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+    
+.card-container {
+  display: flex;
+  flex-direction: column !important;
+  margin-top: 1rem !important;
+  gap: 4rem !important;
+}
+@media (min-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-direction: row !important;
+    margin-top: 1rem !important;
+    column-gap: 7rem !important;
+  }
+}
+
+
+
+.container_px {
+  padding: 0 5%;
+  line-height: 24px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  p {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container_px {
+    margin-bottom: 80px;
+    margin-top: 80px;
+    padding: 0 10%;
+    line-height: 24px;
+    
+  }
+}
+
+
+
+.container_only_px {
+  padding: 0 5%;
+  line-height: 24px;
+  
+}
+
+
+@media (min-width: 1280px) {
+  .container_only_px {
+    padding: 0 10%;
+    line-height: 24px;
+    
+  }
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  /* padding: 0 5%; */
+}
+
+
+.container_global_invest {
+  padding: 0 5%;
+}
+
+@media (min-width: 1280px) {
+  .container_global_invest {
+    padding: 0 10%;
+  }
+}
+
+
+.hover-button {
+  transition: opacity 0.3s ease;
+  @media (min-width: 768px) {
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.download-button {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  @media (min-width: 768px) {
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+}
+
+.button-icon {
+  width: 80px; /* Adjust the size of the icon */
+  height: 80px;
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.button-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 24px;
+  color: #397b21;
+}
+
+.text-description {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.text-title {
+  font-size: 28px;
+  line-height: 28px;
+}
